@@ -14,9 +14,28 @@ nltk.data.path.append(os.path.abspath("nltk_data"))
 nltk.download('punkt')
 
 # Load intents from the JSON file
-file_path = os.path.join(os.path.dirname(__file__), "intents.json")
-with open(file_path, "r") as file:
-    intents = json.load(file)
+def load_intents():
+    # Try multiple possible paths for local and Streamlit Cloud deployment
+    possible_paths = [
+        os.path.join(os.path.dirname(__file__), "intents.json"),  # Local development
+        os.path.join(os.getcwd(), "skill4future/intents.json"),   # Streamlit Cloud
+        "intents.json"  # Fallback
+    ]
+    
+    for path in possible_paths:
+        try:
+            with open(path, "r", encoding='utf-8') as file:
+                return json.load(file)
+        except FileNotFoundError:
+            continue
+    
+    st.error("Error: Could not find intents.json file.")
+    return []
+
+# Load intents
+intents = load_intents()
+if not intents:
+    st.stop()
 
 # Create the vectorizer and classifier
 vectorizer = TfidfVectorizer()
