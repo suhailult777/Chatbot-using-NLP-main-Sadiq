@@ -1,7 +1,7 @@
-nltk==3.8.1
-scikit-learn==1.4.1.post1  # Updated to a version with Python 3.13 wheels
-streamlit==1.31.0
-numpy>=1.24.0
-pandas>=2.0.0
-joblib>=1.2.0
-threadpoolctl>=3.1.0
+nltk
+scikit-learn
+streamlit
+numpy
+pandas
+joblib
+threadpoolctl
