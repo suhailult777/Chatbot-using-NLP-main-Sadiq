@@ -6,14 +6,14 @@
             "Hello",
             "Hey",
             "How are you",
-            "What's up"
+            "What's up",
+            "How's it going?",
+            "Good to see you",
+            "Good morning",
+            "Good afternoon"
         ],
         "responses": [
-            "Hi there",
-            "Hello",
-            "Hey",
-            "I'm fine, thank you",
-            "Nothing much"
+            "Hello! How can I help you today?"
         ]
     },
     {
@@ -22,12 +22,12 @@
             "Bye",
             "See you later",
             "Goodbye",
-            "Take care"
+            "Take care",
+            "Catch you later",
+            "I have to go"
         ],
         "responses": [
-            "Goodbye",
-            "See you later",
-            "Take care"
+            "Goodbye! Have a great day!"
         ]
     },
     {
@@ -36,12 +36,11 @@
             "Thank you",
             "Thanks",
             "Thanks a lot",
-            "I appreciate it"
+            "I appreciate it",
+            "That's helpful"
         ],
         "responses": [
-            "You're welcome",
-            "No problem",
-            "Glad I could help"
+            "You're welcome! Is there anything else I can help with?"
         ]
     },
     {
@@ -50,12 +49,11 @@
             "What can you do",
             "Who are you",
             "What are you",
-            "What is your purpose"
+            "What is your purpose",
+            "Tell me about yourself"
         ],
         "responses": [
-            "I am a chatbot",
-            "My purpose is to assist you",
-            "I can answer questions and provide assistance"
+            "I'm Bot, your friendly AI assistant. I can chat with you, answer your questions, and help with basic math. You can also ask me for a joke or about topics like education and health. How can I help?"
         ]
     },
     {
@@ -64,12 +62,13 @@
             "Help",
             "I need help",
             "Can you help me",
-            "What should I do"
+            "What should I do",
+            "I'm stuck"
         ],
         "responses": [
-            "Sure, what do you need help with?",
-            "I'm here to help. What's the problem?",
-            "How can I assist you?"
+            "Of course! What do you need help with?",
+            "I'm here to help. Just tell me what's on your mind.",
+            "How can I assist you today?"
         ]
     },
     {
@@ -79,9 +78,9 @@
             "What's your age"
         ],
         "responses": [
-            "I don't have an age. I'm a chatbot.",
-            "I was just born in the digital world.",
-            "Age is just a number for me."
+            "I don't have an age in the traditional sense. I'm a program, so I'm timeless!",
+            "I was created by a developer, so you could say I'm newly born in the digital world.",
+            "Age is just a number, but for me, it's more like a version number!"
         ]
     },
     {
@@ -91,7 +90,7 @@
             "How's the weather today"
         ],
         "responses": [
-            "I'm sorry, I cannot provide real-time weather information.",
+            "I'm sorry, but I don't have access to real-time information like the current weather.",
             "You can check the weather on a weather app or website."
         ]
     },
@@ -128,8 +127,9 @@
             "What should I call you"
         ],
         "responses": [
-            "You can call me Chatbot.",
-            "My name is Chatbot."
+            "You can call me Bot!",
+            "My name is Bot. It's nice to meet you!",
+            "I'm Bot, your friendly neighborhood chatbot."
         ]
     },
     {
