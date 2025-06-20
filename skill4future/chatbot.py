@@ -49,6 +49,16 @@ clf.fit(x, y)
 def chatbot(input_text):
     lower_input = input_text.lower().strip()
 
+    # Specific rule-based checks for 'python' and 'ai'
+    if 'python' in lower_input:
+        for intent in intents:
+            if intent['tag'] == 'python':
+                return intent['responses'][0]
+    if 'ai' in lower_input or 'artificial intelligence' in lower_input:
+        for intent in intents:
+            if intent['tag'] == 'ai':
+                return intent['responses'][0]
+
     # 1. Rule-based check for simple, high-frequency intents
     simple_intents = {
         'greeting': ['hi', 'hello', 'hey', 'good morning', 'good afternoon'],

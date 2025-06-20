@@ -3346,5 +3346,27 @@
             "Timeless relics are ancient artifacts and objects that hold historical and cultural significance, preserving the stories of our ancestors.",
             "Archaeologists and historians continue to unearth relics that shed light on human history and civilization."
         ]
+    },
+    {
+        "tag": "python",
+        "patterns": [
+            "what is python",
+            "tell me about python",
+            "python programming"
+        ],
+        "responses": [
+            "Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects."
+        ]
+    },
+    {
+        "tag": "ai",
+        "patterns": [
+            "what is ai",
+            "what is artificial intelligence",
+            "tell me about ai"
+        ],
+        "responses": [
+            "Artificial Intelligence (AI) is a wide-ranging branch of computer science concerned with building smart machines capable of performing tasks that typically require human intelligence. AI is an interdisciplinary science with multiple approaches, but advancements in machine learning and deep learning are creating a paradigm shift in virtually every sector of the tech industry."
+        ]
     }
 ]
