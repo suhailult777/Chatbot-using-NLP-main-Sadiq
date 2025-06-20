@@ -14,7 +14,7 @@ from sklearn.linear_model import LogisticRegression
 ssl._create_default_https_context = ssl._create_unverified_context
 try:
     nltk.data.find('tokenizers/punkt')
-except nltk.downloader.DownloadError:
+except LookupError:
     nltk.download('punkt')
 
 # --- Intent Loading ---
