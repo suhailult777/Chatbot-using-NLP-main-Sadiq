@@ -1,6 +1,15 @@
 # 🤖 Chatbot using NLP
 
-A simple yet powerful chatbot built with Python, NLTK, and Streamlit that uses Natural Language Processing (NLP) to understand and respond to user queries.
+An intelligent and reliable chatbot built with Python, NLTK, and Streamlit. This project uses Natural Language Processing (NLP) to deliver dynamic, human-like conversations, perform calculations, and remember user details within a session.
+
+## ✨ Key Features
+
+- **Modern UI**: A clean, chat-style interface built with Streamlit.
+- **Intelligent Responses**: Moves beyond static replies with a hybrid model that combines rule-based logic and machine learning (Logistic Regression) for higher accuracy.
+- **Math Solver**: Can detect and accurately solve basic math expressions.
+- **Session Memory**: Remembers the user's name during a conversation for a personalized experience.
+- **Reliable & Deterministic**: Uses a confidence threshold to avoid irrelevant answers and provides a helpful fallback message.
+- **Conversation Logging**: Saves chat history to a `chat_log.csv` file for review.
 
 ## 🚀 Getting Started
 
@@ -12,83 +21,64 @@ A simple yet powerful chatbot built with Python, NLTK, and Streamlit that uses N
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/Chatbot-using-NLP.git
-   cd Chatbot-using-NLP
+   git clone https://github.com/Suhail-Ul-Hassan/Chatbot-using-NLP-main.git
+   cd Chatbot-using-NLP-main
    ```
 
 2. **Install the required packages**
    ```bash
    pip install -r requirements.txt
    ```
-   
-   If you don't have a requirements.txt file, install the packages manually:
-   ```bash
-   pip install nltk==3.8.1 scikit-learn==1.3.2 streamlit==1.31.0 numpy pandas
-   ```
 
 ### 🏃‍♂️ Running the Application
 
-1. **Navigate to the project directory**
+1. **Run the Streamlit app**
    ```bash
-   cd skill4future
+   streamlit run skill4future/chatbot.py
    ```
 
-2. **Run the Streamlit app**
-   ```bash
-   streamlit run chatbot.py
-   ```
+2. **Access the chatbot**
+   The application will open in your browser. Interact with the chatbot by typing in the input box.
 
-3. **Access the chatbot**
-   The application will automatically open in your default web browser at:
-   ```
-   http://localhost:8501
-   ```
-   If it doesn't open automatically, you can manually navigate to the URL above.
+## 🧪 Example Interactions
 
-## 🧪 Testing the Chatbot
-
-1. Once the application is running, you'll see a text input field in your browser
-2. Type a message like "Hi" or "Hello" and press Enter
-3. The chatbot will respond based on the patterns in `intents.json`
-
-### Example Interactions:
-- User: "Hi"
-- Bot: "Hello! How can I help you today?"
-
-- User: "What can you do?"
-- Bot: [Response from your intents.json]
+- **Greeting**: "Hello"
+- **Math**: "what is 5*5"
+- **Memory**: "my name is Alex"
+- **Recall**: "what is my name?"
+- **General**: "Tell me about education"
 
 ## 🛠️ Customization
 
 ### Adding New Intents
-1. Open `skill4future/intents.json`
-2. Add a new intent object with patterns and responses:
+
+1. Open `skill4future/intents.json`.
+2. Add a new intent object with a unique `tag`, a list of `patterns` (user queries), and a list of `responses`.
+
    ```json
    {
-     "tag": "greeting",
-     "patterns": ["Hi", "Hello", "Hey there"],
-     "responses": ["Hello!", "Hi there!", "Hey! How can I help you?"]
+     "tag": "your_new_intent",
+     "patterns": ["What is...", "Tell me about..."],
+     "responses": ["This is the answer."]
    }
    ```
+3. The model will automatically retrain with the new data when you restart the application.
 
 ## 📂 Project Structure
 
 ```
-Chatbot-using-NLP/
+Chatbot-using-NLP-main/
 ├── skill4future/
-│   ├── chatbot.py      # Main chatbot application
-│   ├── intents.json    # Training data for the chatbot
-│   └── nltk_data/      # NLTK data directory (will be created)
+│   ├── chatbot.py      # Main Streamlit application & chatbot logic
+│   └── intents.json    # Training data (intents and responses)
+├── chat_log.csv        # Stores conversation history (auto-generated)
+├── requirements.txt    # Project dependencies
 └── README.md           # This file
 ```
 
 ## 🤝 Contributing
 
 Feel free to submit issues and enhancement requests.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
